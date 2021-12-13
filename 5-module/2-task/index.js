@@ -1,5 +1,5 @@
 function toggleText() {
-  document.addEventListener('click', function () {
+  document.addEventListener('click', () => {
     elem = document.getElementById('text');
     elem.hidden = !elem.hidden;
   });

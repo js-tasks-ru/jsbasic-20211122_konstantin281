@@ -1,6 +1,4 @@
 function hideSelf() {
   button = document.querySelector('.hide-self-button');
-  button.addEventListener('click', function () {
-    this.hidden = true;
-  });
+  button.addEventListener('click', () => {button.hidden = true;});
 }
