@@ -1,6 +1,9 @@
 function toggleText() {
-  document.addEventListener('click', function() {
-    let elem = document.getElementById('text');
-    elem.hidden = !elem.hidden;
+  let toggleButton = document.querySelector('.toggle-text-button');
+  let textElement = document.getElementById('text');
+
+  toggleButton.addEventListener('click', () => {
+    let isTextElementHidden = textElement.hidden;
+    textElement.hidden = !isTextElementHidden;
   });
 }
