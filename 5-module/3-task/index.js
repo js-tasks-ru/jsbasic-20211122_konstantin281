@@ -1,8 +1,8 @@
 function initCarousel() {
-  carousel = document.querySelector('.carousel__inner');
-  left = document.querySelector('.carousel__arrow_left');
-  right = document.querySelector('.carousel__arrow_right');
-  INDEX = 0;
+  let carousel = document.querySelector('.carousel__inner');
+  let left = document.querySelector('.carousel__arrow_left');
+  let right = document.querySelector('.carousel__arrow_right');
+  let INDEX = 0;
 
   INDEX === 0 && (left.style.display = 'none');
 
