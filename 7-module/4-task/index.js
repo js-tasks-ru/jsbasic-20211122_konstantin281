@@ -14,6 +14,9 @@ export default class StepSlider {
     this.sliderProgress = this.#slider.querySelector('.slider__progress');
     this.defaultDragAndDropOff();
     this.dragAndDropActivate();
+    this.leftPercents = (100 / (this.steps - 1) * (this.value));
+    this.sliderTumbs.style.left = `${this.leftPercents}%`;
+    this.sliderProgress.style.width = `${this.leftPercents}%`;
   }
 
   createSlider() {
@@ -115,7 +118,7 @@ export default class StepSlider {
     let sliderTumbs = this.#slider.querySelector('.slider__thumb');
     sliderTumbs.ondragstart = () => false;
   }
-  
+
   dragAndDropActivate() {
     this.sliderTumbs.onpointerdown = this.pointerDown;
   }
